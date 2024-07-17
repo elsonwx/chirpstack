@@ -761,8 +761,8 @@ impl Data {
 
                         item.remaining_payload_size -= qi.data.len();
                     } else {
-                        f_pending = true;
-                        mac_pl.fhdr.f_ctrl.f_pending = true;
+                        f_pending = false;
+                        mac_pl.fhdr.f_ctrl.f_pending = false;
                     }
                 }
             }

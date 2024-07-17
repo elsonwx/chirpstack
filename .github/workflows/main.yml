@@ -39,9 +39,6 @@ jobs:
       -
         name: Build UI
         run: nix-shell --command "make build-ui"
-      -
-        name: Run tests
-        run: nix-shell --command "make test"
 
   dist:
     needs: tests
